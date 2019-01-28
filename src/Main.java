@@ -1,10 +1,15 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Menghitung Keliling Bujur Sangkar dan Lingkaran");
-        BujurSangkar bujunrsangkar = new BujurSangkar();
-        Lingkaran lingkaran = new Lingkaran();
-        bujunrsangkar.hitungkelilingbujursangkar(8);
-        lingkaran.hitungkelilinglingkaran(12);
+        Lingkaran bulat = new Lingkaran();
+        BujurSangkar kotak = new BujurSangkar();
+
+        bulat.setRadius(50);
+        bulat.hitungkelilinglingkaran();
+        System.out.println("HASIL DARI KELILING LINGKARAN ADALAH = " + bulat.getKelilingLingkaran());
+
+        kotak.setSisi(150);
+        kotak.hitungkelilingbujursangkar();
+        System.out.println("HASIL DARI KELILING BUJUR SANGKAR ADALAH = " + kotak.getKelilingBujurSangkar());
     }
 }
